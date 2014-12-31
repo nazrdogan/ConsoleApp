@@ -11,6 +11,8 @@ var menu1=function(color){
 		backgroundColor:color,
 	});
 	
+
+	
     self.add(navigation);
 	return self;
 };

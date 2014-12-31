@@ -11,14 +11,14 @@ var mainMenu = function() {
         var label = Ti.UI.createLabel({
             color: "#576996",
             font: {
-                fontFamily: "Arial",
-                fontSize: defaultFontSize + 6,
+                fontFamily: "JACKPORT REGULAR NCV",
+                fontSize: defaultFontSize + 16,
                 fontWeight: "bold"
             },
             text: "Menu" + i,
             top: 6,
             width: 200,
-            height: 30
+            height: 110
         });
         row.add(label);
         tableData.push(row);

@@ -17,10 +17,10 @@ for (var i=1; i<=10; i++){
   
 var label= Ti.UI.createLabel({
     color:'#576996',
-    font:{fontFamily:'Arial', fontSize:defaultFontSize+6, fontWeight:'bold'},
+    font:{fontFamily:'JACKPORT REGULAR NCV', fontSize:defaultFontSize+16, fontWeight:'bold'},
     text:'Menu' + i,
     top: 6,
-    width:200, height: 30
+    width:200, height: 110
   });
   
 row.add(label);
@@ -41,6 +41,7 @@ var tableView = Ti.UI.createTableView({
 	
 tableView.addEventListener("click",function(e){
 	Ti.App.Properties.setBool("contentOpen",true);
+	
     if(e.row.rowIndex===1){
     self.remove(tableView);
     self.add(content1);
@@ -74,7 +75,7 @@ Ti.App.addEventListener("removeView",function(){
      self.add(tableView);
 
 	   Ti.API.info("Children :"+self.children[0]);
-	     Ti.API.info("Children1 :"+self.children[1]);
+	   Ti.API.info("Children1 :"+self.children[1]);
 	   
 	   
 });
